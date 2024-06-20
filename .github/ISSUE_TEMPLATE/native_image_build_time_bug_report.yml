@@ -16,9 +16,15 @@ body:
     validations:
       required: true
 
-  - type: markdown
+  - type: checkboxes
+    id: latest_version_check
     attributes:
-      value: "Using the latest version of GraalVM can resolve many issues. Please confirm if you have tested with the latest available version."
+      label: "Using the latest version of GraalVM can resolve many issues. Please confirm if you have tested with the latest available version."
+      description: "Check the box if you tried with the latest version of GraalVM."
+      options:
+        - label: "I tried with the latest version of GraalVM."
+    validations:
+      required: true
 
   - type: input
     id: graalvm_version
@@ -26,16 +32,6 @@ body:
       label: GraalVM Version
       description: "Provide the version of GraalVM used."
       placeholder: "Output of `java -version` "
-    validations:
-      required: true
-
-  - type: checkboxes
-    id: latest_version_check
-    attributes:
-      label: "Version Confirmation"
-      description: "Check the box if you tried with the latest version of GraalVM."
-      options:
-        - label: "I tried with the latest version of GraalVM."
     validations:
       required: true
 
