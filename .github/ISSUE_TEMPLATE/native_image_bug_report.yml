@@ -6,7 +6,7 @@ labels: ["native-image", "bug", "triage"]
 body:
   - type: markdown
     attributes:
-      value: "For security vulnerabilities, please consult the GraalVM security policy and contact the security team directly."
+      value: "For security vulnerabilities, please consult the [GraalVM security policy](https://github.com/oracle/graal/security/policy) and contact the security team directly."
 
   - type: textarea
     id: describe_issue
